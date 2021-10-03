@@ -1,0 +1,253 @@
+The A Href Attribute Example
+The <a href> attribute refers to a destination provided by a link. The a (anchor) tag is dead without the <href> attribute. Sometimes in your workflow, you don’t want a live link or you won’t know the link destination yet. In this case, it’s useful to set the href attribute to "#" to create a dead link. The hrefattribute can be used to link to local files or files on the internet.
+
+For instance:
+
+<html>
+  <head>
+    <title>Href Attribute Example</title>
+  </head>
+  <body>
+    <h1>Href Attribute Example</h1>
+    <p>
+      <a href="https://www.freecodecamp.org/contribute/">The freeCodeCamp Contribution Page</a> shows you how and where you can contribute to freeCodeCamp's community and growth.
+    </p>
+  </body>
+</html>
+The <a href> attribute is supported by all browsers.
+
+More attributes:
+hreflang : Specifies the language of the linked resource. target : Specifies the context in which the linked resource will open. title : Defines the title of a link, which appears to the user as a tooltip.
+
+Examples
+<a href="#">This is a dead link</a>
+<a href="https://www.freecodecamp.org">This is a live link to freeCodeCamp</a>
+<a href="https://html.com/attributes/a-href/">more with a href attribute</a>
+In-page anchors
+It’s also possible to set an anchor to certain place of the page. To do this you should first place a tab at location on the page with tag and necessary attribute “name” with any keyword description in it, like this:
+
+<a name="top"></a>
+Any description between tags is not required. After that you can place a link leading to this anchor at any palce on same page. To do this you should use tag with necessary attribute “href” with symbol # (sharp) and key-word description of the anchor, like this:
+
+<a href="#top">Go to Top</a>
+Image Links
+The <a href="#"> may also be applied to images and other HTML elements.
+
+Example
+<a href="#">
+  <img itemprop="image" style="height: 90px;" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+</a>
+Example
+The A Target Example
+The <a target> attribute specifies where to open the linked document in an a (anchor) tag.
+
+Examples:
+
+A target attribute with the value of “_blank” opens the linked document in a new window or tab.
+
+<a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+A target attribute with the value of “_self” opens the linked document in the same frame as it was clicked (this is the default and usually does not need to be specified).
+
+<a href="https://www.freecodecamp.org/" target="_self">freeCodeCamp</a>
+<a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+A target attribute with the value of “_parent” opens the linked document in the parent frame.
+
+<a href="https://www.freecodecamp.org/" target="_parent">freeCodeCamp</a>
+A target attribute with the value of “_top” opens the linked document in the full body of the window.
+
+<a href="https://www.freecodecamp.org/" target="_top">freeCodeCamp</a>
+A target attribute with the value of “framename” Opens the linked document in a specified named frame.
+
+<a href="https://www.freecodecamp.org/" target="framename">freeCodeCamp</a>
+The Body Background Attribute Example
+If you want to add a background image instead of a color, one solution is the <body background> attribute. It specifies a background image for an HTML document.
+
+Syntax:
+
+<body background="URL">
+
+Attribute:
+
+background - URL for background image
+
+Example:
+
+<html>
+  <body background="https://assets.digitalocean.com/blog/static/hacktoberfest-is-back/hero.png">
+  </body>
+</html>
+body-background attribute is depreciated
+the body-background attribute been deprecated in HTML5. The correct way to style the <body> tag is with CSS.
+
+There are several CSS properties used for setting the background of an element. These can be used on to set the background of an entire page.
+
+The Body Bgcolor Attribute Example
+The <body bgcolor> attribute assigns a background color for an HTML document.
+
+Syntax:
+
+<body bgcolor="color"> The color value can be either a color name (like, purple) or a hex value (like, #af0000).
+
+To add a background color to a webpage you can use the <body bgcolor="######"> attribute. It specifies a color for the HTML document to display.
+
+For example:
+
+<html>
+  <head>
+    <title>Body bgcolor Attribute example</title>
+  </head>
+  <body bgcolor="#afafaf">
+    <h1>This webpage has colored background.</h1>
+  </body>
+</html>
+You can change the color by replacing ###### with a hexadecimal value. For simple colors you can also use the word, such as “red” or “black”.
+
+All major browsers support the <body bgcolor> attribute.
+
+Note:
+
+HTML 5 does not support the <body bgcolor> attribute. Use CSS for this purpose. How? By using the following code: <body style="background-color: color"> Of course, you can also do it in a separate document instead of an inline method.
+Do not use RGB value in <body bgcolor> attribute because rgb() is for CSS only, that is, it will not work in HTML.
+The Div Align Attribute Example
+The <div align=""> attribute is used for aligning the text in a div tag to The Left, Right, center or justify.
+
+For instance:
+
+<html>
+  <head>
+    <title>Div Align Attribbute</title>
+  </head>
+  <body>
+    <div align="left">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+    <div align="right">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+    <div align="center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+    <div align="justify">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </div>
+  </body>
+</html>
+Important!
+This attribute is no longer supported in html5. css is the way to go.
+
+The Div Align attribute can be used to horizontally align the contents within a div. In the below example, the text will be centered within the div.
+
+<div align="center">
+  This Text Will Be Centered
+</div>
+**This attribute is not supported in HTML5 and CSS Text Align should be used instead
+
+The Font Color Attribute Example
+This attribute is used to set a color to the text enclosed in a <font> tag.
+
+Important:
+This attribute is not supported in HTML5. Instead, this freeCodeCamp article specifies a CSS method, which can be used.
+
+Note:
+A color can also be specified using a 'hex code' or an 'rgb code', instead of using a name.
+
+Example:
+Color name attribute
+<html>
+  <body>
+    <font color="green">Font color example using color attribute</font>
+  </body>
+</html>
+Hex code attribute
+
+<html>
+  <body>
+    <font color="#00FF00">Font color example using color attribute</font>
+  </body>
+</html>
+RGB attribute
+
+<html>
+  <body>
+    <font color="rgb(0,255,0)">Font color example using color attribute</font>
+  </body>
+</html>
+The Font Size Attribute Example
+This attribute specifies the font size as either a numeric or relative value. Numeric values range from 1 to 7with 1 being the smallest and 3 the default. It can also be defined using a relative value, like +2 or -3, which set it relative to the value of the size attribute of the <basefont> element, or relative to 3, the default value, if none does exist.
+
+Syntax:
+
+<font size="number">
+
+Example:
+
+<html>
+  <body>
+    <font size="6">This is some text!</font>
+  </body>
+</html>
+Note : The size attribute of <font> is not supported in HTML5. Use CSS instead.
+
+The Img Align Attribute Example
+The align attribute of an image specifies where the image should be aligned according to the surrounding element.
+
+Attribute Values:
+right - Align image to the right left - Align image to the left
+top - Align image to the top
+bottom - Align image to the bottom
+middle - Align image to the middle
+
+For example:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Img Align Attribute</title>
+  </head>
+  <body>
+    <p>
+      This is an example. <img src="image.png" alt="Image" align="middle" /> More text right here
+      <img src="image.png" alt="Image" width="100" />
+    </p>
+  </body>
+</html>
+We can also align in right if we want:
+
+<p>This is another example<img src="image.png" alt="Image" align="right" /></p>
+Please note the align attribute is not supported in HTML5, and you should use CSS instead. However, it is still supported by all the major browsers.
+
+The Img Width Attribute
+The HTML ‘width’ attribute refers to the width of an image. The value in the quotations is the amount of pixels.
+
+For example, if you already have a link to an image set up via the src attribute you can add the width attribute like so:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Img Width Attribute</title>
+  </head>
+  <body>
+    <img src="image.png" alt="Image" width="100" />
+  </body>
+</html>
+In the code snippet above there is an image tag and the image is set to a width of 100 pixels. width="100"
+
+The Img Src Attribute Example
+The <img src> attribute refers to the source of the image you want to display. The img tag will not display an image without the src attribute. However, if you set the source to the location of the image, you can display any image.
+
+There is an image of the freeCodeCamp Logo located at https://avatars0.githubusercontent.com/u/9892522?v=4&s=400
+
+You can set that as the image using the src attribute.
+
+<html>
+  <head>
+    <title>Img Src Attribute Example</title>
+  </head>
+  <body>
+    <img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" />
+  </body>
+</html>
